@@ -13,12 +13,13 @@ namespace FirstMvc
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
+            /*routes.MapRoute(
                 "FilmekMegjelenésSzerint",
                 "Filmek/Megjelenes/{ev}/{honap}",
                 new { controller = "Filmek", action = "MegjelenesSzerint" },
                 new {ev = @"\d{4}", honap = @"\d{2}"}
                 );
+                */
 
             routes.MapRoute(
                 name: "Default",
