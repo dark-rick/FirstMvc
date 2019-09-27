@@ -19,7 +19,7 @@ namespace FirstMvc.Controllers
             //return Content("Szeretem a cicákat");
             //return HttpNotFound();
             //return new EmptyResult();
-
+            return RedirectToAction("Index","Home", new {oldal = 1, rendezes = "cica" });
         }
     }
 }
