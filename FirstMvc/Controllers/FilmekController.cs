@@ -38,5 +38,9 @@ namespace FirstMvc.Controllers
             return Content($"oldalszám:  = {oldal} | rendezés: {rendezes}");
         }
 
+        public ActionResult MegjelenesSzerint(int ev, int honap)
+        {
+            return Content($"év = {ev} | hónap = {honap}");
+        }
     }
 }
