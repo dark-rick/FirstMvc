@@ -38,8 +38,8 @@ namespace FirstMvc.Controllers
             return Content($"oldalszám:  = {oldal} | rendezés: {rendezes}");
         }
 
-        [Route("Filmek/Megjelenes/{ev:regex(\\d{4})}/{honap:regex(\\d{2})}:range(1, 12)")]
-        public ActionResult MegjelenesSzerint(int? ev, int? honap)
+        
+        public ActionResult Megjelenes(int? ev, int? honap)
         {
             return Content($"év = {ev} | hónap = {honap}");
         }
