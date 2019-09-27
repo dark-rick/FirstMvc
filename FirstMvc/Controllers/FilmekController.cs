@@ -28,12 +28,12 @@ namespace FirstMvc.Controllers
             return Content($"id = {id}");
         }
 
-        public ActionResult Index(int? oldal, string rendezes)
+        public ActionResult Index(int? oldal = 1, string rendezes = "cím")
         {
-            if (!oldal.HasValue)
+            /*if (!oldal.HasValue)
                 oldal = 1;
             if (string.IsNullOrWhiteSpace(rendezes))
-                rendezes = "cim";
+                rendezes = "cim";*/
 
             return Content($"oldalszám:  = {oldal} | rendezés: {rendezes}");
         }
