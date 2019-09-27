@@ -15,7 +15,7 @@ namespace FirstMvc
 
             routes.MapRoute(
                 "FilmekMegjelenésSzerint",
-                "Filmek/MegjelenesSzerint/{ev}/{honap}",
+                "Filmek/Megjelenes/{ev}/{honap}",
                 new {controller = "Filmek", action = "MegjelenesSzerint"}
                 );
 
