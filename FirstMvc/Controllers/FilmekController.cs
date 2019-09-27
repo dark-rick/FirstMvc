@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using FirstMvc.Models;
+using FirstMvc.ViewModels;
 
 namespace FirstMvc.Controllers
 {
@@ -16,11 +17,23 @@ namespace FirstMvc.Controllers
 
             var film = new Film() { Cim = "Kill Bill" };
 
-            ViewData["Film"] = film;
+            //ViewData["Film"] = film;
+            //ViewBag.Film = film;
 
-            ViewBag.Film = film;
+            var kolcsonzok = new List<Kolcsonzok>()
+            {
+                new Kolcsonzok() {Nev = "Géza"},
+                new Kolcsonzok() {Nev = "Laci"},
+                new Kolcsonzok() {Nev = "Anna"}
+            };
 
-            return View();
+            var rfvm = new RandomFilmViewModel()
+            {
+                Film = film,
+                Kolcsonzok = kolcsonzok
+            };
+
+            return View(rfvm);
 
             
 

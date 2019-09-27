@@ -1,6 +1,8 @@
-﻿@using FirstMvc.Models;
+﻿@*@using FirstMvc.Models;
 
-@model FirstMvc.Models.Film
+@model FirstMvc.Models.Film*@
+
+@model FirstMvc.ViewModels.RandomFilmViewModel
 
 
 @{
@@ -8,6 +10,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-//<h2>@((ViewData["Film"] as Film).Cim)</h2>
-<h2>@ViewBag.Film.Cim</h2>
+<h2>@Model.Film.Cim</h2>
+@*<h2>@((ViewData["Film"] as Film).Cim)</h2>*@
+@*<h2>@ViewBag.Film.Cim</h2>*@
 
