@@ -1,4 +1,6 @@
-﻿@model FirstMvc.Models.Film
+﻿@using FirstMvc.Models;
+
+@model FirstMvc.Models.Film
 
 
 @{
@@ -6,5 +8,5 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@Model.Cim</h2>
+<h2>@((ViewData["Film"] as Film).Cim)</h2>
 

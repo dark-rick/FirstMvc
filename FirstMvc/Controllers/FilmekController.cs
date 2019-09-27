@@ -15,7 +15,13 @@ namespace FirstMvc.Controllers
 
 
             var film = new Film() { Cim = "Kill Bill" };
-            return View(film);
+
+            ViewData["Film"] = film;
+
+            return View();
+
+            
+
             //return Content("Szeretem a cicákat");
             //return HttpNotFound();
             //return new EmptyResult();
