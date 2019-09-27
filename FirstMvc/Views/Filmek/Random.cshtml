@@ -8,9 +8,11 @@
 @{
     ViewBag.Title = "Random";
     Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var cssClassNev = Model.Kolcsonzok.Count > 5 ? "nepszeru" : null;
 }
 
-<h2>@Model.Film.Cim</h2>
+<h2 class="@cssClassNev">@Model.Film.Cim</h2>
 @*<h2>@((ViewData["Film"] as Film).Cim)</h2>*@
 @*<h2>@ViewBag.Film.Cim</h2>*@
 

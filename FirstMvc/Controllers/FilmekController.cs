@@ -22,9 +22,9 @@ namespace FirstMvc.Controllers
 
             var kolcsonzok = new List<Kolcsonzok>()
             {
-                //new Kolcsonzok() {Nev = "Géza"},
-                //new Kolcsonzok() {Nev = "Laci"},
-                //new Kolcsonzok() {Nev = "Anna"}
+                new Kolcsonzok() {Nev = "Géza"},
+                new Kolcsonzok() {Nev = "Laci"},
+                new Kolcsonzok() {Nev = "Anna"}
             };
 
             var rfvm = new RandomFilmViewModel()
