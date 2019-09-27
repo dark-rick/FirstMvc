@@ -18,6 +18,8 @@ namespace FirstMvc.Controllers
 
             ViewData["Film"] = film;
 
+            ViewBag.Film = film;
+
             return View();
 
             
