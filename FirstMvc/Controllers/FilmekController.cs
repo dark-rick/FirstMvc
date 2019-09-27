@@ -37,5 +37,6 @@ namespace FirstMvc.Controllers
 
             return Content($"oldalszám:  = {oldal} | rendezés: {rendezes}");
         }
+
     }
 }
