@@ -27,5 +27,10 @@ namespace FirstMvc.Controllers
         {
             return Content($"id = {id}");
         }
+
+        public ActionResult Index(int? oldal, string rendezes)
+        {
+            return Content($"oldalszám:  = {oldal} | rendezés: {rendezes}");
+        }
     }
 }
