@@ -1,6 +1,6 @@
 ﻿@*@using FirstMvc.Models;
 
-@model FirstMvc.Models.Film*@
+    @model FirstMvc.Models.Film*@
 
 @model FirstMvc.ViewModels.RandomFilmViewModel
 
@@ -14,3 +14,17 @@
 @*<h2>@((ViewData["Film"] as Film).Cim)</h2>*@
 @*<h2>@ViewBag.Film.Cim</h2>*@
 
+@if (Model.Kolcsonzok.Count == 0)
+{
+    <p>Senki se kölcsönözte ki ezt a könyvet</p>
+    <text>WOOOOOW</text>
+}
+else
+{
+    <ul>
+        @foreach (var k in Model.Kolcsonzok)
+        {
+            <li>@k.Nev</li>
+        }
+    </ul>
+}
