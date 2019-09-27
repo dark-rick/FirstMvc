@@ -15,11 +15,17 @@ namespace FirstMvc.Controllers
 
 
             var film = new Film() { Cim = "Kill Bill" };
-            //return View(film);
+            return View(film);
             //return Content("Szeretem a cicákat");
             //return HttpNotFound();
             //return new EmptyResult();
-            return RedirectToAction("Index","Home", new {oldal = 1, rendezes = "cica" });
+            //return RedirectToAction("Index","Home", new {oldal = 1, rendezes = "cica" });
+
+        }
+
+        public ActionResult Szerkesztes(int id)
+        {
+            return Content($"id = {id}");
         }
     }
 }
